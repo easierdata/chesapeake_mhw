@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "chesapeake-mhw"
+version = "0.1.0"
+description = ""
+authors = [
+    "Rachel Wegener <rwegener@terpmail.umd.edu, rwegener@terpmail.umd.edu>",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.2"
+dask = "2021.10.0"
+numpy = "^1.26.4"
+xarray = "^2024.2.0"
+scipy = "^1.12.0"
+netcdf4 = "^1.6.5"
+zarr = "^2.17.0"
+pydap = "^3.4.1"
+lxml = "^5.1.0"
+requests = "^2.31.0"
+pandas = "^2.2.1"
+matplotlib = "^3.8.3"
+seaborn = "^0.13.2"
+cartopy = "^0.22.0"
+jupyter = "^1.0.0"
+jupyterlab = "^4.1.2"
+aiohttp = "^3.9.3"
+earthaccess = "^0.9.0"
+ipfs-stac = "^0.2.0"
+tqdm = "^4.67.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
