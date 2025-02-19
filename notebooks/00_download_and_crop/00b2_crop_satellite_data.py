@@ -35,6 +35,9 @@ CONCURRENCY_LIMIT = 5
 if not Path.exists(SCRATCH_DIR):
     Path.mkdir(SCRATCH_DIR, exist_ok=True, parents=True)
 
+if not Path.exists(DATA_DIR):
+    Path.mkdir(DATA_DIR, exist_ok=True, parents=True)
+
 if not Path.exists(OUTPUT_DIR):
     Path.mkdir(OUTPUT_DIR, exist_ok=True, parents=True)
 
