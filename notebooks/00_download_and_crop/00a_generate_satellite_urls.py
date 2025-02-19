@@ -5,7 +5,6 @@
 # Run TWICE: `python 00a_generate_satellite_urls.py` from the environment
 # First time set DATASET = 'geopolar', second time DATASET = 'mur'
 #########
-import os
 import pathlib
 
 import pandas as pd
@@ -112,8 +111,8 @@ output_filename = f"filepaths_{DATASET}_{START_DATE}_{END_DATE}.txt"
 
 output_path = REPO_ROOT / "data" / "interim" / output_filename
 # Create directory if it does not exist
-if not os.path.exists(REPO_ROOT / "data" / "interim"):
-    os.makedirs(REPO_ROOT / "data" / "interim")
+if not pathlib.Path.exists(REPO_ROOT / "data" / "interim"):
+    pathlib.Path.mkdir(REPO_ROOT / "data" / "interim")
 
 with open(output_path, "w") as f:
     f.writelines(filepath + "\n" for filepath in all_filepaths)
