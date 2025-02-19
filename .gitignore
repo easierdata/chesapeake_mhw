@@ -92,3 +92,4 @@ target/
 
 # Data files
 data/*
+!data/cid_payload.csv
